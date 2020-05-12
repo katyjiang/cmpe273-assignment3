@@ -77,8 +77,8 @@ class BloomFilter(object):
         k = (m/n) * math.log(2)
         return int(k)
 
-# uncommetn and run python3 bloom_filter.py to test code below 
-'''
+# uncommetn and run python3 bloom_filter.py to test code below
+''' 
 n = 20 
 p = 0.05 
   
@@ -113,7 +113,30 @@ for word in test_words:
     else: 
         print("'{}' is definitely not present!".format(word)) 
 
+# test result should looks like this, the prder might be different.
 
-
+katy-2:~ katy$ python /Users/katy/Desktop/assignment3/bloom_filter.py
+Size of bit array:124
+False positive Probability:0.05
+Number of hash functions:4
+'stefan' is probably present!
+'urban' is definitely not present!
+'max' is probably present!
+'tina' is probably present!
+'jennifer' is probably present!
+'sri' is probably present!
+'jerry' is probably present!
+'brandy' is definitely not present!
+'marvel' is definitely not present!
+'acc' is probably present!
+'fiveguys' is definitely not present!
+'burgerking' is definitely not present!
+'popeyes' is definitely not present!
+'chris' is probably present!
+'starwar' is definitely not present!
+'love' is definitely not present!
+'katy' is probably present!
+'jessica' is probably present!
 
 '''
+
